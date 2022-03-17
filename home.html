@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Home - Workwolf</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+  <link rel="canonical" href="https://workwolf.com/" />
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <link rel="icon" href="https://workwolf.com/wp-content/uploads/2021/07/cropped-favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" href="https://workwolf.com/wp-content/uploads/2021/07/cropped-favicon-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://workwolf.com/wp-content/uploads/2021/07/cropped-favicon-180x180.png" />
+  <meta name="msapplication-TileImage"
+    content="https://workwolf.com/wp-content/uploads/2021/07/cropped-favicon-270x270.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <style amp-custom>
+    @font-face {
+      font-family: "FontAwesome";
+      src: url("https://somedomain.org/fonts/fontawesome-webfont.ttf");
+    }
+
+    body i {
+      font-family: "FontAwesome";
+      content: "";
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+
+    @media (min-width: 576px) {
+
+      .container {
+        max-width: 540px;
+      }
+    }
+
+    @media (min-width: 768px) {
+
+      .container {
+        max-width: 720px;
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      .container {
+        max-width: 960px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+
+      .container {
+        max-width: 1140px;
+      }
+    }
+
+    @media (min-width: 1400px) {
+
+      .container {
+        max-width: 1320px;
+      }
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -0.75rem;
+      margin-left: -0.75rem;
+    }
+
+    .row>* {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+    }
+
+    .col-md-6 {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+
+    .col-md-3 {
+      flex: 0 0 auto;
+      width: 25%;
+    }
+
+    .col-md-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .align-items-center {
+      align-items: center;
+    }
+
+    .justify-content-between {
+      justify-content: space-between;
+    }
+
+    .d-flex {
+      display: flex;
+    }
+
+    .me-3 {
+      margin-right: 1.5em;
+    }
+
+    .pe-3 {
+      padding-right: 1.5em;
+    }
+
+    h2 {
+      color: #221f20;
+      font-size: 45px;
+      line-height: 50px;
+      font-weight: 700;
+      margin-top: 0;
+    }
+
+    .btn {
+      font-weight: 500;
+      font-size: 18px;
+      background-color: #d0b08b;
+      color: #221f20;
+      padding: 0 35px;
+      height: 50px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      transition: opacity .45s cubic-bezier(.25, 1, .33, 1), transform .45s cubic-bezier(.25, 1, .33, 1), border-color .45s cubic-bezier(.25, 1, .33, 1), color .45s cubic-bezier(.25, 1, .33, 1), background-color .45s cubic-bezier(.25, 1, .33, 1), box-shadow .45s cubic-bezier(.25, 1, .33, 1);
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      box-shadow: 0 20px 38px rgba(0, 0, 0, .16);
+      transform: translateY(-3px);
+    }
+
+    .btn-primary {
+      border: 2px solid #d0b08b;
+      background-color: #d0b08b;
+      color: #221f20;
+    }
+
+    .btn.btn-secondary {
+      border: 2px solid #221f20;
+      color: rgb(241, 237, 233);
+      background-color: #221f20;
+    }
+
+    .btn.btn-white {
+      border: 2px solid #f1ede9;
+      color: #f1ede9;
+      background-color: transparent;
+    }
+
+    .header {
+      background-color: #221f20;
+    }
+
+    .header a.logo {
+      min-width: 200px;
+    }
+
+    header.header nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    .header nav>ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 100%;
+    }
+
+    .header nav>ul:last-child {
+      min-width: 200px;
+      width: 200px;
+      justify-content: flex-end;
+    }
+
+    .header nav>ul>li {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 16px;
+      height: 86px;
+      position: relative;
+    }
+
+    .header nav>ul>li:first-child {
+      margin: 0 16px 0 0;
+    }
+
+    .header nav>ul>li:last-child {
+      margin: 0 0 0 16px;
+    }
+
+    .header nav>ul>li>a {
+      color: #d0b08b;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .header nav>ul>li>a i {
+      margin-right: 10px;
+      font-size: 12px;
+    }
+
+    .header nav>ul>li>a {
+      color: #d0b08b;
+      display: inline-flex;
+      align-items: center;
+      font-family: Poppins;
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 400;
+      text-decoration: none;
+      outline: none;
+    }
+
+    .header nav>ul>li>a span {
+      position: relative;
+    }
+
+    .header nav>ul>li>a span:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #d0b08b;
+      transition: 0.3s;
+    }
+
+    .header nav>ul>li:hover>a span:before {
+      width: 100%;
+    }
+
+    .header nav>ul>li>a.btn {
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: .2px;
+      text-transform: uppercase;
+      background-color: #d0b08b;
+      color: #221f20;
+      padding: 0 20px;
+      height: 37px;
+      border-radius: 4px;
+    }
+
+    .header nav>ul>li>ul {
+      background-color: #221f20;
+      border-width: 1px 0 0 0;
+      border-style: solid;
+      border-color: #d0b08b;
+      padding: 20px;
+      min-width: 330px;
+      position: absolute;
+      top: 100%;
+      left: -30px;
+      margin: 0;
+      list-style: none;
+      display: none;
+    }
+
+    .header nav>ul>li:hover>ul {
+      display: block;
+    }
+
+    .header nav>ul>li>ul>li>a {
+      color: #d0b08b;
+      display: inline-flex;
+      align-items: center;
+      font-family: Poppins;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      text-decoration: none;
+      outline: none;
+      padding: 6px 6px;
+    }
+
+    .header nav>ul>li>ul>li {
+      transition: 0.3s;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+    }
+
+    .header nav>ul>li:hover>ul>li {
+      transition-delay: 0.5s;
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .announcement {
+      background: #d0b08b;
+      padding: 20px 0;
+    }
+
+    .announcement p {
+      color: #221f20;
+      font-family: Poppins;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    .announcement p a {
+      font-family: Poppins;
+      font-size: 18px;
+      line-height: 22px;
+      color: #221f20;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+
+    .announcement p i {
+      font-size: 28px;
+      margin-right: 15px;
+      position: relative;
+      top: 2px;
+    }
+
+    .hero-banner {
+      background-color: #221f20;
+      padding: 135px 0;
+    }
+
+    .hero-banner h1 {
+      color: #f1ede9;
+      font-size: 60px;
+      line-height: 66px;
+      font-family: 'Poppins';
+      text-transform: none;
+      font-weight: 700;
+      margin: 0 0 64px 0;
+    }
+
+    .hero-banner p {
+      font-family: Poppins;
+      color: #fff;
+      font-size: 24px;
+      line-height: 31px;
+      font-weight: 300;
+      margin: 0 0 64px 0;
+    }
+
+    .nectar-shape-divider-wrap {
+      height: 60px;
+      margin-top: -60px;
+    }
+
+    .nectar-shape-divider-wrap svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    section.section2 {
+      padding: 100px 0 130px 0;
+    }
+
+    .section2 h2 {
+      margin-bottom: 55px;
+    }
+
+    .section2 .single {
+      text-align: center;
+    }
+
+    .section2 .row {
+      margin-bottom: 130px;
+    }
+
+    .section2 .single h4 {
+      margin: 10px 0 1.5em 0;
+      color: #221f20;
+      font-family: 'Poppins';
+      font-size: 21px;
+      line-height: 27px;
+      font-weight: 700;
+    }
+
+    .section2 .single h4+amp-img {
+      max-width: 140px;
+      max-height: 154px;
+      margin: 0 auto;
+    }
+
+    .section2 .single p {
+      font-family: Poppins;
+      color: #221f20;
+      font-size: 21px;
+      line-height: 27px;
+      font-weight: 300;
+      margin: 15px 0 0 0;
+    }
+
+    .section3 {
+      background-color: #f1ede9;
+      padding: 100px 0;
+    }
+
+    .section3 h2 {
+      margin-bottom: 55px;
+    }
+
+    .single-review {
+      background-color: #fff;
+      padding: 38px 38px;
+      height: 100%;
+    }
+
+    .single-review p {
+      font-family: Poppins;
+      color: #221f20;
+      font-size: 21px;
+      line-height: 27px;
+      font-weight: 300;
+      margin: 45px 0 1.5em 0;
+    }
+
+    .single-review>amp-img {
+      max-width: 130px;
+      max-height: 50px;
+    }
+
+    .single-review .d-flex amp-img {
+      max-width: 55px;
+      max-height: 55px;
+      border-radius: 50%;
+    }
+
+    .single-review .d-flex {
+      align-items: center;
+    }
+
+    .single-review .d-flex p {
+      font-family: Poppins;
+      color: #221f20;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .single-review .d-flex p strong {
+      font-weight: 700;
+    }
+
+    .section4 {
+      background-color: #221f20;
+      padding: 100px 0;
+    }
+
+    .section4 .single h2 {
+      color: #f1ede9;
+      margin: 0 0 30px 0;
+    }
+
+    .section4 .single p {
+      font-family: Poppins;
+      color: #f1ede9;
+      font-size: 21px;
+      line-height: 27px;
+      font-weight: 300;
+      margin: 0 0 1.5em 0;
+    }
+
+    .section4 .single amp-img {
+      border: 1px solid #f1ede9;
+      max-width: 100%;
+      max-height: 355px;
+    }
+
+    .section5 {
+      background-color: #fff;
+      padding: 100px 0;
+    }
+
+    .section5 .d-flex {
+      align-items: center;
+      margin: 0 -0.75rem;
+      justify-content: space-between;
+    }
+
+    .section5 .d-flex .single {
+      width: calc(100%/5);
+      padding: 0 0.75rem;
+    }
+
+    .section5 h2 {
+      margin: 0 0 100px 0;
+    }
+
+    .section5 .d-flex {
+      margin: 0 0 70px 0;
+    }
+
+    .section5 .d-flex .single amp-img {
+      max-width: 85%;
+      max-height: 40px;
+      display: flex;
+      margin: 0 auto;
+    }
+
+    .section5 .d-flex .single amp-img img {
+      position: initial;
+      max-width: 100%;
+      max-height: 100%;
+      min-width: initial;
+      min-height: initial;
+      height: auto;
+      width: auto;
+    }
+
+    main {
+      margin-bottom: 530px;
+      z-index: 2;
+      position: relative;
+      background-color: #fff;
+    }
+
+    .footer {
+      background: #221f20;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1;
+      padding-top: 75px;
+    }
+
+    .footer .single {
+      margin-bottom: 35px;
+    }
+
+    .footer .single:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer .single h6 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #d0b08b;
+      letter-spacing: .2px;
+      margin: 0 0 20px 0;
+    }
+
+    .footer .single ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer .single ul li {
+      padding: 4px 0;
+    }
+
+    .footer .single ul li:first-child {
+      padding: 0 0 4px 0;
+    }
+
+    .footer .single ul li:last-child {
+      padding: 4px 0 0 0;
+    }
+
+    .footer .single ul li a {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: .2px;
+      text-transform: none;
+      color: #f1ede9;
+      display: inline-block;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer .single ul li a:hover {
+      color: #d0b08b;
+    }
+
+    .footer .single p,
+    .footer .single p a {
+      color: #ccc;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 300;
+      margin: 20px 0 0 0;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer .single p a:hover {
+      color: #d0b08b;
+    }
+
+    .footer .social-links {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    .footer .social-links li {
+      padding-right: 8px;
+    }
+
+    .footer .social-links li:last-child {
+      padding-right: 0;
+    }
+
+    .footer .social-links li a i {
+      font-size: 40px;
+      line-height: 40px;
+      height: 40px;
+      width: 40px;
+      color: #d0b08b;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      padding: 20px 0;
+      color: #777;
+      margin-top: 75px;
+    }
+
+    .copyright p {
+      line-height: 22px;
+      margin-top: 3px;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .copyright p a {
+      color: #ccc;
+      margin: 0 5px;
+    }
+
+    .copyright p a:last-child {
+      margin: 0;
+    }
+
+    .copyright p a amp-img {
+      margin-left: 10px;
+    }
+  </style>
+
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+
+      to {
+        visibility: visible;
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none;
+      }
+    </style>
+  </noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <a href="#" class="logo">
+          <amp-img src="https://workwolf.com/wp-content/uploads/2021/07/logo-1.png" alt="Workwolf" width="134"
+            height="30" layout="fixed"></amp-img>
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fas fa-angle-down"></i> <span>Company</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-angle-down"></i> <span>Solutions</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">Employers & recruiters</a>
+                </li>
+                <li>
+                  <a href="#">Professionals & job seekers</a>
+                </li>
+                <li>
+                  <a href="#">Soft skills assessment</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-angle-down"></i> <span>Pricing</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">Employers & recruiters</a>
+                </li>
+                <li>
+                  <a href="#">Professionals & job seekers</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-angle-down"></i> <span>Partners</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">Clients</a>
+                </li>
+                <li>
+                  <a href="#">Integrations</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-angle-down"></i> <span>Resources</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">News & Insights</a>
+                </li>
+                <li>
+                  <a href="#">Case studies</a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#" class="btn">SIGN UP</a>
+            </li>
+            <li>
+              <a target="_blank" rel="noopener" href="#"><span>LOG IN</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="announcement">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <p><i class="fas fa-trophy"></i> Winner of the Manpower Group HR Challenge for “Automating recruitment” at
+            Vivatechnology 2021</p>
+          <p><a href="#" target="_blank" rel="noopener">About the award</a></p>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Hire fast, hire once</h1>
+            <p>Blockchain enabled, real-time verification of resume credentials makes wasted time and mis-hires a thing
+              of
+              the past. Never wait for a background check again.</p>
+            <a href="#" class="btn btn-primary me-3">Get access</a>
+            <a href="#" class="btn btn-white">Request a demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="nectar-shape-divider-wrap">
+      <svg class="nectar-shape-divider" aria-hidden="true" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1000 100" preserveAspectRatio="none">
+        <path d="M 0 0 c 0 0 200 50 500 50 s 500 -50 500 -50 v 101 h -1000 v -100 z"></path>
+      </svg>
+    </div>
+
+    <section class="section2">
+      <div class="container">
+        <h2 class="text-center">The <em>Digital Work Passport</em> makes hiring easy</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="single">
+              <amp-img src="https://workwolf.com/wp-content/uploads/2021/08/1.png" alt="Workwolf" width="44" height="44"
+                layout="fixed">
+              </amp-img>
+              <h4>Enhanced filtration</h4>
+              <amp-img src="https://workwolf.com/wp-content/uploads/2021/12/enhanced-filtration.png" alt="Workwolf"
+                width="202" height="202" layout="fixed">
+              </amp-img>
+              <p>Matching algorithms are sent to every job applicant, then they’re ranked based on your company’s
+                profiling.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single">
+              <amp-img src="https://workwolf.com/wp-content/uploads/2021/08/2.png" alt="Workwolf" width="44" height="44"
+                layout="fixed">
+              </amp-img>
+              <h4>Optimized verification</h4>
+              <amp-img src="https://workwolf.com/wp-content/uploads/2021/12/optimized-verification.png" alt="Workwolf"
+                width="202" height="202" layout="fixed">
+              </amp-img>
+              <p>Credentials are authenticated before a job offer, reducing candidate drop-off and speeding time to
+                hire.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single">
+              <amp-img src="https://workwolf.com/wp-content/uploads/2021/08/3.png" alt="Workwolf" width="44" height="44"
+                layout="fixed">
+              </amp-img>
+              <h4>Better talent access</h4>
+              <amp-img src="https://workwolf.com/wp-content/uploads/2021/12/better-talent-access.png" alt="Workwolf"
+                width="202" height="202" layout="fixed">
+              </amp-img>
+              <p>Pre-matched candidate pools are categorized and recommended based on your specific job requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn btn-secondary">More about our solutions</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="container">
+        <h2 class="text-center">HR leaders who love our tech</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="single-review">
+              <amp-img src="https://workwolf.com/wp-content/uploads/2021/08/javelin.png" alt="Workwolf" width="294"
+                height="112" layout="fixed">
+              </amp-img>
+              <p>“Workwolf will transform the way we conduct recruiting. I love how their Digital Work Passport helps to
+                identify and qualify top talent while saving time and money.”</p>
+              <div class="d-flex">
+                <amp-img src="https://workwolf.com/wp-content/uploads/2021/07/charmaine-thomas-300x300.jpeg"
+                  alt="Workwolf" width="300" height="300" layout="fixed">
+                </amp-img>
+                <p>
+                  <strong>Charmaine Thomas</strong>
+                  <br>
+                  HR Manager
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-review">
+              <amp-img src="https://workwolf.com/wp-content/uploads/2021/08/dentsply-sirona.png" alt="Workwolf"
+                width="294" height="112" layout="fixed">
+              </amp-img>
+              <p>“The Digital Work Passport is a game changer. It delivers efficiency, better filtration, faster
+                verification, and a better experience for our candidates.”</p>
+              <div class="d-flex">
+                <amp-img src="https://workwolf.com/wp-content/uploads/2021/07/eva-hajtko-300x300.jpeg" alt="Workwolf"
+                  width="300" height="300" layout="fixed">
+                </amp-img>
+                <p>
+                  <strong>Eva Hajtko</strong>
+                  <br>
+                  Human Resources Leader
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-review">
+              <amp-img src="https://workwolf.com/wp-content/uploads/2021/10/magnus_hr_solutions.png" alt="Workwolf"
+                width="294" height="112" layout="fixed">
+              </amp-img>
+              <p>“Filtering applicants was the most time consuming part of my team’s job. Now we find better quality
+                matches in less time.”</p>
+              <div class="d-flex">
+                <amp-img src="https://workwolf.com/wp-content/uploads/2021/08/kimberly-lima-300x300.jpg" alt="Workwolf"
+                  width="300" height="300" layout="fixed">
+                </amp-img>
+                <p>
+                  <strong>Kimberly Lima</strong>
+                  <br>
+                  Director of Recruitment
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="single pe-3">
+              <h2>Reduce your time to hire</h2>
+              <p>We’ve developed a network that connects both professionals and employers to hundreds of thousands of
+                credential issuers, making it easy to verify resume content in real time.</p>
+              <a href="#" class="btn btn-primary">Watch Now</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="single">
+              <amp-img
+                src="https://workwolf.com/wp-content/uploads/2021/08/Captura-de-Pantalla-2021-08-03-a-las-01.32.25.png"
+                alt="Workwolf" width="1440" height="811">
+              </amp-img>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section5">
+      <div class="container">
+        <h2 class="text-center">Workwolf integrates easily with your ATS & HRIS</h2>
+        <div class="d-flex">
+          <div class="single">
+            <amp-img src="https://workwolf.com/wp-content/uploads/2021/08/workable.png" alt="Workwolf" width="478"
+              height="67"></amp-img>
+          </div>
+          <div class="single">
+            <amp-img src="https://workwolf.com/wp-content/uploads/2021/08/jazzhr.png" alt="Workwolf" width="264"
+              height="67"></amp-img>
+          </div>
+          <div class="single">
+            <amp-img src="https://workwolf.com/wp-content/uploads/2021/08/lever.png" alt="Workwolf" width="271"
+              height="67"></amp-img>
+          </div>
+          <div class="single">
+            <amp-img src="https://workwolf.com/wp-content/uploads/2021/08/recruitee.png" alt="Workwolf" width="369"
+              height="67"></amp-img>
+          </div>
+          <div class="single">
+            <amp-img src="https://workwolf.com/wp-content/uploads/2021/08/recruiterflow.png" alt="Workwolf" width="561"
+              height="67"></amp-img>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn btn-secondary">Check our integrations</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="single">
+            <h6>Company</h6>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="single">
+            <h6>Solutions</h6>
+            <ul>
+              <li><a href="#">Employers & recruiters</a></li>
+              <li><a href="#">Professionals & job seekers</a></li>
+              <li><a href="#">Soft skills assessment</a></li>
+            </ul>
+          </div>
+          <div class="single">
+            <h6>Pricing</h6>
+            <ul>
+              <li><a href="#">Employers & recruiters</a></li>
+              <li><a href="#">Professionals & job seekers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="single">
+            <h6>Partners</h6>
+            <ul>
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="single">
+            <h6>Resources</h6>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">News & Insights</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <ul class="social-links">
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <i class="fab fa-youtube-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener">
+                <i class="fab fa-spotify"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="single">
+            <amp-img src="https://workwolf.com/wp-content/uploads/2022/01/logo-whte.png" alt="Workwolf" width="150"
+              height="34"></amp-img>
+            <p>
+              866 The Queensway, Suite 200
+              Etobicoke, Ontario, M8Z 1N7 Canada
+              <br>
+              <a href="tel:+18884022003">+1 888-402-2003</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <p>
+          © 2022 Workwolf.
+          <a href="#">Privacy policy</a> |
+          <a href="#">Terms & Conditions</a> |
+          <a href="#">Data privacy notice</a>
+          <a href="#" target="_blank" rel="noopener">
+            <amp-img src="https://cdn.drata.com/badge/soc2-light.png" alt="Workwolf" width="60" height="62"></amp-img>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
