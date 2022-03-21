@@ -20,16 +20,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css" />
   <!-- <link rel="stylesheet" href="style.css" /> -->
   <style amp-custom>
-    @font-face {
-      font-family: "FontAwesome";
-      src: url("https://somedomain.org/fonts/fontawesome-webfont.ttf");
-    }
-
-    body i {
-      font-family: "FontAwesome";
-      content: "";
-    }
-
     *,
     ::after,
     ::before {
@@ -50,35 +40,30 @@
 
 
     @media (min-width: 576px) {
-
       .container {
         max-width: 540px;
       }
     }
 
     @media (min-width: 768px) {
-
       .container {
         max-width: 720px;
       }
     }
 
     @media (min-width: 992px) {
-
       .container {
         max-width: 960px;
       }
     }
 
     @media (min-width: 1200px) {
-
       .container {
         max-width: 1140px;
       }
     }
 
     @media (min-width: 1400px) {
-
       .container {
         max-width: 1320px;
       }
@@ -99,19 +84,31 @@
       padding-left: 0.75rem;
     }
 
-    .col-md-6 {
-      flex: 0 0 auto;
-      width: 50%;
-    }
+    @media (min-width: 768px) {
+      .col-md-2 {
+        flex: 0 0 auto;
+        width: 16.6666666667%;
+      }
 
-    .col-md-3 {
-      flex: 0 0 auto;
-      width: 25%;
-    }
+      .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+      }
 
-    .col-md-4 {
-      flex: 0 0 auto;
-      width: 33.33333333%;
+      .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+      }
+
+      .col-md-5 {
+        flex: 0 0 auto;
+        width: 41.6666666667%;
+      }
+
+      .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+      }
     }
 
     .text-center {
@@ -185,10 +182,14 @@
 
     .header {
       background-color: #221f20;
+      height: 86px;
+      display: flex;
+      align-items: center;
     }
 
     .header a.logo {
       min-width: 200px;
+      display: flex;
     }
 
     header.header nav {
@@ -303,6 +304,7 @@
 
     .header nav>ul>li:hover>ul {
       display: block;
+      z-index: 9;
     }
 
     .header nav>ul>li>ul>li>a {
@@ -317,20 +319,6 @@
       text-decoration: none;
       outline: none;
       padding: 6px 6px;
-    }
-
-    .header nav>ul>li>ul>li {
-      transition: 0.3s;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(20px);
-    }
-
-    .header nav>ul>li:hover>ul>li {
-      transition-delay: 0.5s;
-      transform: translateY(0);
-      opacity: 1;
-      visibility: visible;
     }
 
     .announcement {
@@ -695,6 +683,530 @@
     .copyright p a amp-img {
       margin-left: 10px;
     }
+
+    @media (max-width: 1399.98px) {
+      .announcement p i {
+        font-size: 25px;
+        margin-right: 10px;
+      }
+
+      .announcement p {
+        font-size: 18px;
+      }
+
+      .announcement p a {
+        font-size: 16px;
+      }
+
+      .hero-banner {
+        padding: 80px 0 140px 0;
+      }
+
+      .hero-banner h1 {
+        font-size: 50px;
+        line-height: 56px;
+        margin: 0 0 50px 0;
+      }
+
+      .hero-banner p {
+        font-size: 22px;
+        line-height: 30px;
+        margin: 0 0 50px 0;
+      }
+
+      section.section2 {
+        padding: 70px 0 90px 0;
+      }
+
+      h2 {
+        font-size: 35px;
+        line-height: 40px;
+      }
+
+      .section2 .single h4 {
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      .section2 .single p {
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      .section2 .row {
+        margin-bottom: 100px;
+      }
+
+      .section3 {
+        padding: 70px 0 90px 0;
+      }
+
+      .single-review p {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 30px 0 1.5em 0;
+      }
+
+      .single-review .d-flex p {
+        font-size: 16px;
+        line-height: 22px;
+        padding-left: 15px;
+      }
+
+      .single-review {
+        padding: 30px 30px;
+      }
+
+      .section4 {
+        padding: 90px 0;
+      }
+
+      .section4 .single p {
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      .section5 {
+        padding: 70px 0 90px 0;
+      }
+
+      .section5 h2 {
+        margin: 0 0 80px 0;
+      }
+
+      .footer .social-links li a i {
+        font-size: 35px;
+        line-height: 35px;
+        height: 35px;
+        width: 35px;
+      }
+
+      .footer .single p,
+      .footer .single p a {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 15px 0 0 0;
+      }
+
+      .footer .single ul li a {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .footer .single h6 {
+        margin: 0px 0 15px 0;
+      }
+
+      .header nav>ul>li>ul {
+        min-width: 280px;
+      }
+
+      main {
+        margin-bottom: 513px;
+      }
+    }
+
+    @media (max-width: 1199.98px) {
+      .header nav>ul>li>a {
+        font-size: 14px;
+        line-height: 14px;
+      }
+
+      .header nav>ul>li>a i {
+        margin-right: 8px;
+      }
+
+      .header nav>ul>li {
+        margin: 0 10px;
+      }
+
+      .header nav>ul>li:first-child {
+        margin: 0 10px 0 0;
+      }
+
+      .header nav>ul>li:last-child {
+        margin: 0 0 0 10px;
+      }
+
+      .header nav>ul>li>a.btn {
+        padding: 0 15px;
+      }
+
+      .header nav>ul>li>ul {
+        padding: 15px;
+        min-width: 250px;
+        left: -8px;
+      }
+
+      .header nav>ul>li>ul>li>a {
+        font-size: 13px;
+      }
+
+      .announcement p i {
+        font-size: 22px;
+      }
+
+      .announcement p {
+        font-size: 16px;
+      }
+
+      .announcement .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .announcement p a {
+        font-size: 14px;
+        margin-left: 38px;
+      }
+
+      .hero-banner {
+        padding: 60px 0 120px 0;
+      }
+
+      .hero-banner h1 {
+        font-size: 45px;
+        line-height: 50px;
+        margin: 0 0 35px 0;
+      }
+
+      .hero-banner p {
+        font-size: 20px;
+        margin: 0 0 45px 0;
+      }
+
+      .btn {
+        font-size: 16px;
+        padding: 0 25px;
+      }
+
+      section.section2 {
+        padding: 50px 0 70px 0;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .section2 .single p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .section2 .single h4+amp-img {
+        max-width: 120px;
+        max-height: 134px;
+      }
+
+      .section3 {
+        padding: 60px 0 70px 0;
+      }
+
+      .single-review p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .single-review {
+        padding: 20px 20px;
+      }
+
+      .single-review .d-flex p {
+        font-size: 14px;
+        padding-left: 10px;
+      }
+
+      .single-review .d-flex amp-img {
+        max-width: 45px;
+        max-height: 45px;
+      }
+
+      .section4 {
+        padding: 70px 0;
+      }
+
+      .section4 .single p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .section5 {
+        padding: 60px 0 70px 0;
+      }
+
+      .footer .row .col-md-3:first-child {
+        flex: 0 0 auto;
+        width: 16.6666666667%;
+      }
+
+      .footer .row .col-md-3:nth-child(2) {
+        flex: 0 0 auto;
+        width: 30%;
+      }
+
+      .footer .row .col-md-3:nth-child(3) {
+        flex: 0 0 auto;
+        width: 20%;
+      }
+
+      .footer .row .col-md-3:last-child {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+      }
+
+      .copyright p {
+        font-size: 14px;
+      }
+
+      .footer .social-links li a i {
+        font-size: 30px;
+        line-height: 30px;
+        height: 30px;
+        width: 30px;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      header.header nav {
+        display: none;
+      }
+
+      .header .d-flex.align-items-center {
+        justify-content: space-between;
+      }
+
+      .toggle-menu {
+        font-size: 22px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .announcement p {
+        display: inline-flex;
+      }
+
+      .announcement p a {
+        margin-left: 35px;
+        margin-top: 5px;
+      }
+
+      .hero-banner .col-md-6 {
+        width: 100%;
+      }
+
+      .hero-banner h1 {
+        font-size: 40px;
+        margin: 0 0 30px 0;
+      }
+
+      .hero-banner p {
+        font-size: 18px;
+        margin: 0 0 40px 0;
+      }
+
+      h2 {
+        font-size: 28px;
+        line-height: 35px;
+      }
+
+      .section3 .col-md-4 {
+        width: 50%;
+      }
+
+      .section3 .row {
+        justify-content: center;
+        margin-bottom: -30px;
+      }
+
+      .single-review {
+        margin-bottom: 30px;
+        height: calc(100% - 30px);
+      }
+
+      .footer .single p,
+      .footer .single p a {
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      .footer .social-links li {
+        padding-right: 3px;
+      }
+
+      .footer .social-links li a i {
+        font-size: 26px;
+        line-height: 26px;
+        height: 26px;
+        width: 26px;
+      }
+
+      .footer {
+        padding-top: 65px;
+      }
+
+      .copyright {
+        margin-top: 65px;
+      }
+
+      .section5 .d-flex .single {
+        width: calc(100%/3);
+        margin-bottom: 30px;
+      }
+
+      .section5 .d-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 0 40px 0;
+      }
+
+      .footer .row .col-md-3:first-child {
+        flex: 0 0 auto;
+        width: 18%;
+      }
+
+      .footer .row .col-md-3:nth-child(2) {
+        flex: 0 0 auto;
+        width: 32%;
+      }
+
+      .footer .row .col-md-3:nth-child(3) {
+        flex: 0 0 auto;
+        width: 20%;
+      }
+
+      .footer .row .col-md-3:last-child {
+        flex: 0 0 auto;
+        width: 30%;
+      }
+
+      main {
+        margin-bottom: 493px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .header {
+        height: 70px;
+      }
+
+      .announcement p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .announcement {
+        padding: 10px 0;
+      }
+
+      .announcement p a {
+        margin-top: 2px;
+      }
+
+      .hero-banner h1 {
+        line-height: 45px;
+        margin: 0 0 25px 0;
+      }
+
+      .hero-banner p {
+        font-size: 16px;
+        margin: 0 0 30px 0;
+      }
+
+      .hero-banner .btn {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .section2 .single h4+amp-img {
+        max-width: 140px;
+        max-height: 154px;
+      }
+
+      .section2 .single {
+        margin-bottom: 50px;
+      }
+
+      .section2 .row {
+        margin-bottom: 40px;
+      }
+
+      .section3 .col-md-4 {
+        width: 100%;
+      }
+
+      .section4 .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .section4 .single.pe-3 {
+        padding: 0;
+        margin: 0 0 50px 0;
+      }
+
+      .section4 .single amp-img {
+        max-height: 240px;
+      }
+
+      .section5 .d-flex .single {
+        width: calc(100%/2);
+      }
+
+      .footer {
+        position: initial;
+      }
+
+      main {
+        margin: 0;
+      }
+
+      .footer .row .col-md-3:first-child,
+      .footer .row .col-md-3:nth-child(2),
+      .footer .row .col-md-3:nth-child(3),
+      .footer .row .col-md-3:last-child {
+        width: 100%;
+      }
+
+      .footer .single:last-child {
+        margin-bottom: 35px;
+      }
+
+      .footer .single ul li {
+        padding: 2px 0;
+      }
+
+      .footer .single h6 {
+        margin: 0px 0 12px 0;
+      }
+
+      .footer .social-links {
+        margin-bottom: 50px;
+        margin-top: 15px;
+      }
+
+      .copyright {
+        margin-top: 35px;
+      }
+
+      .copyright p {
+        flex-wrap: wrap;
+      }
+
+      .copyright p a amp-img {
+        margin: 10px 0 0 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .toggle-menu {
+        display: none;
+      }
+    }
   </style>
 
   <style amp-boilerplate>
@@ -775,6 +1287,9 @@
         <a href="#" class="logo">
           <amp-img src="https://workwolf.com/wp-content/uploads/2021/07/logo-1.png" alt="Workwolf" width="134"
             height="30" layout="fixed"></amp-img>
+        </a>
+        <a href="#" class="toggle-menu">
+          <i class="fas fa-bars"></i>
         </a>
         <nav>
           <ul>
